@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro.in – Creative Video Agency Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo">Editkaro<span>.in</span></div>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="menu-btn" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Creative Video Editing & Social Media Magic 🎬</h1>
+      <p>We craft stories that engage, entertain, and inspire audiences — from short-form reels to cinematic brand films.</p>
+      <a href="#portfolio" class="btn">View Our Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section inter-card">
+    <div class="container">
+      <div class="section-header">
+        <h2>About <span>Editkaro.in</span></h2>
+        <p class="subtitle">Crafting visuals that tell stories, inspire emotion, and amplify brands.</p>
+      </div>
+
+      <div class="about-container">
+        <div class="about-image">
+          <img src="media/Edits.png" alt="Editkaro.in Agency Workspace" />
+        </div>
+
+        <div class="about-content">
+          <h3>Who We Are</h3>
+          <p>
+            <strong>Editkaro.in</strong> is a <em>creative video editing & social media marketing agency</em> dedicated to transforming your raw footage into stunning visual stories.
+            We collaborate with creators, brands, and businesses to produce high-impact content that connects emotionally and drives engagement.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h4>🎬 100+ Projects</h4>
+              <p>From reels to documentaries, we’ve edited for influencers, startups, and global brands.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>⚡ Fast Turnaround</h4>
+              <p>Our optimized workflow ensures every project is delivered on time with precision.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>💡 Unique Style</h4>
+              <p>Every edit carries a signature blend of rhythm, color, and storytelling finesse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services</h2>
+        <p class="subtitle">What we do — crafted with intent</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h4>Short-form Videos</h4>
+          <p>Reels and shorts optimized for virality and engagement on Instagram, TikTok, and YouTube Shorts.</p>
+        </div>
+        <div class="service-card">
+          <h4>Long-form / Documentary</h4>
+          <p>Story-driven editing for documentaries, interviews, and cinematic brand storytelling.</p>
+        </div>
+        <div class="service-card">
+          <h4>Gaming Edits</h4>
+          <p>Highlights, montages, and hype reels that keep viewers on the edge of their seats.</p>
+        </div>
+        <div class="service-card">
+          <h4>eCommerce Ads</h4>
+          <p>Conversion-optimized product demos and ad creatives with dynamic motion design.</p>
+        </div>
+        <div class="service-card">
+          <h4>Color Grading & VFX</h4>
+          <p>Cinematic color grading and effects that elevate tone, emotion, and brand identity.</p>
+        </div>
+        <div class="service-card">
+          <h4>Anime / Stylized Edits</h4>
+          <p>Stylized fan edits with creative transitions, rhythm syncs, and visual artistry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio section inter-card">
+    <div class="container">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <p class="subtitle">Filter by category and preview our edits</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="short">Short</button>
+        <button class="filter" data-filter="gaming">Gaming</button>
+        <button class="filter" data-filter="anime">Anime</button>
+        <button class="filter" data-filter="ads">Ads</button>
+        <button class="filter" data-filter="doc">Documentary</button>
+      </div>
+
+      <div class="grid" id="gallery">
+        <article class="card" data-category="short">
+          <div class="thumb"><video src="media/viral.mp4" muted loop preload="metadata"></video></div>
+          <div class="card-body"><h3>Viral Short Clip</h3><p class="meta">Short • 00:30</p></div>
+        </article>
+        <article class="card" data-category="gaming">
+          <div class="thumb"><video src="media/game.mp4" muted loop></video></div>
+          <div class="card-body"><h3>Gaming Montage</h3><p class="meta">Short • 01:45</p></div>
+        </article>
+        <article class="card" data-category="anime">
+          <div class="thumb"><video src="media/anime.mp4" muted loop></video></div>
+          <div class="card-body"><h3>Anime Edit</h3><p class="meta">Stylized • 00:50</p></div>
+        </article>
+        <article class="card" data-category="ads">
+          <div class="thumb"><video src="media/ad.mp4" muted loop></video></div>
+          <div class="card-body"><h3>Product Ad</h3><p class="meta">Ad • 00:40</p></div>
+        </article>
+        <article class="card" data-category="doc">
+          <div class="thumb"><video src="media/doc.mp4" muted loop></video></div>
+          <div class="card-body"><h3>Mini Documentary</h3><p class="meta">Long • 06:12</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="team section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <p class="subtitle">A creative collective of editors, designers, and strategists</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="media/team-rohit.jpg" alt="Rohit Sharma">
+          <h4>Rohit Sharma</h4>
+          <p class="role">Founder & Lead Editor</p>
+          <p class="bio">Visionary storyteller with 6+ years in cinematic editing and post-production.</p>
+        </div>
+        <div class="team-card">
+          <img src="media/team-priya.jpg" alt="Priya Singh">
+          <h4>Priya Singh</h4>
+          <p class="role">Social Media Strategist</p>
+          <p class="bio">Data-driven strategist focused on audience growth and platform optimization.</p>
+        </div>
+        <div class="team-card">
+          <img src="media/team-karan.jpg" alt="Karan Mehta">
+          <h4>Karan Mehta</h4>
+          <p class="role">Motion Designer</p>
+          <p class="bio">Creates motion graphics and visual effects that elevate storytelling.</p>
+        </div>
+        <div class="team-card">
+          <img src="media/team-ananya.jpg" alt="Ananya Rao">
+          <h4>Ananya Rao</h4>
+          <p class="role">Client Relations</p>
+          <p class="bio">Ensures seamless communication and timely delivery across projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section inter-card">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p class="subtitle">Let's collaborate — send a message or book a quick call</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Full name" required />
+        <input type="email" name="email" placeholder="Email address" required />
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <a class="btn btn-outline" href="mailto:hello@editkaro.in">Email Us</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Editkaro.in</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true">
+      <button class="lightbox-close" id="closeLightbox" aria-label="Close preview">&times;</button>
+      <video id="lightboxVideo" controls playsinline></video>
+      <div class="lightbox-meta">
+        <p id="lightboxTitle"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
